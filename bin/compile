@@ -72,6 +72,8 @@ export LIBRARY_PATH="\$HOME/.apt/usr/lib/x86_64-linux-gnu:\$HOME/.apt/usr/lib/i3
 export INCLUDE_PATH="\$HOME/.apt/usr/include:\$INCLUDE_PATH"
 export CPATH="\$INCLUDE_PATH"
 export CPPPATH="\$INCLUDE_PATH"
+export CFLAGS="-I\$HOME/.apt/usr/include/x86_64-linux-gnu"
+export CPPFLAGS="-I\$HOME/.apt/usr/include/x86_64-linux-gnu"
 export PKG_CONFIG_PATH="\$HOME/.apt/usr/lib/x86_64-linux-gnu/pkgconfig:\$HOME/.apt/usr/lib/i386-linux-gnu/pkgconfig:\$HOME/.apt/usr/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 
@@ -81,6 +83,8 @@ export LIBRARY_PATH="$BUILD_DIR/.apt/usr/lib/x86_64-linux-gnu:$BUILD_DIR/.apt/us
 export INCLUDE_PATH="$BUILD_DIR/.apt/usr/include/x86_64-linux-gnu:$BUILD_DIR/.apt/usr/include:$INCLUDE_PATH"
 export CPATH="$INCLUDE_PATH"
 export CPPPATH="$INCLUDE_PATH"
+export CFLAGS="-I$BUILD_DIR/app/.apt/usr/include/x86_64-linux-gnu"
+export CPPFLAGS="-I$BUILD_DIR/app/.apt/usr/include/x86_64-linux-gnu"
 export PKG_CONFIG_PATH="$BUILD_DIR/.apt/usr/lib/x86_64-linux-gnu/pkgconfig:$BUILD_DIR/.apt/usr/lib/i386-linux-gnu/pkgconfig:$BUILD_DIR/.apt/usr/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 #give environment to later buildpacks
